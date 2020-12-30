@@ -1,4 +1,4 @@
-﻿var url = 'http://bargers.ml';
+﻿var url = 'http://amadoshop.tk';
 let login = localStorage.getItem('login');
 var cart = {};
 
