@@ -1,4 +1,4 @@
-﻿var url = 'http://amadoshop.tk';
+﻿var url = 'https://amadoshop.tk';
 var login = localStorage.getItem('login');
 
 var cart = {};
@@ -99,7 +99,7 @@ $(document).ready(function () {
 	$('body').on('click	', '.fa-star', function () {
 
 		let parent = $(this).closest(".ratings");
-		if (login == 1) {
+		//if (login == 1) {
 
 			let children = [];
 			for (let i = 0; i < 5; i++) {
@@ -110,19 +110,19 @@ $(document).ready(function () {
 				else ($(children[i]).attr('style', 'color: rgba(0, 0, 0, 0.3);'))
 			}
 
-		}
-		else {
-			let rate = $(parent).closest('.ratings-cart');
+		//}
+	//	else {
+	//		let rate = $(parent).closest('.ratings-cart');
 
-			var oldHtml = $(rate).html();
+	//		var oldHtml = $(rate).html();
 
-			$(rate).html(oldHtml + "<p class=\"er\">Only for our users</p>");
+	//		$(rate).html(oldHtml + "<p class=\"er\">Only for our users</p>");
 
-			setTimeout(function () {
-				$(".er").remove();
-			}, 1000)
+//			setTimeout(function () {
+//				$(".er").remove();
+//			}, 1000)
 
-		}
+//		}
 	})
 
 	$('.items').on('click', function () {

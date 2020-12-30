@@ -1,4 +1,4 @@
-﻿var url = 'http://amadoshop.tk';
+﻿var url = 'https://amadoshop.tk';
 let login = localStorage.getItem('login');
 var cart = {};
 

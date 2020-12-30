@@ -1,13 +1,14 @@
 ﻿const http = require('http')
+const https = require('https')
 const fs = require('fs')
 const path = require('path')
 const mysql = require("mysql2");
 
 const connection = mysql.createConnection({
 	host: "localhost",
-	user: "root",
+	user: "mihoil",
 	database: "webstore",
-	password: "123hard"
+	password: "1234dghaF!fs25"
 });
 
 connection.connect(function (err) {
@@ -369,7 +370,7 @@ const server = http.createServer((req, res) => {
 	}
 })
 
-const PORT = process.env.PORT || 80
+const PORT = process.env.PORT || 8000
 
 server.listen(PORT, () => {
 	console.log('Server starting...')
