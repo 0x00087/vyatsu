@@ -1,0 +1,18 @@
+{
+	"name": "amado-store",
+	"version": "0.9.0",
+	"description": "WEB STORE WHICH USE ONLY STUDY PURPOSE",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js"
+	},
+	"author": "Michael Kozyukov <mikkykozyukov@gmail.com>",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.6"
+	},
+	"dependencies": {
+		"mysql2": "^2.2.5"
+	}
+}

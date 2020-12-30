@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Amado | Sign Up</title>
+
+
+	<link rel="icon" href="img/core-img/favicon.ico">
+	<link rel="stylesheet" href="css/core-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+	<!-- Main Content Wrapper Start -->
+	<div class="main-content-wrapper d-flex clearfix">
+
+		<!-- Mobile Nav (max width 767px)-->
+		<div class="mobile-nav">
+			<!-- Navbar Brand -->
+			<div class="amado-navbar-brand">
+				<a href="index"><img src="img/core-img/logo.png" alt=""></a>
+			</div>
+			<!-- Navbar Toggler -->
+			<div class="amado-navbar-toggler">
+				<span></span><span></span><span></span>
+			</div>
+		</div>
+
+		<!-- Header Area Start -->
+		<header class="header-area clearfix">
+			<!-- Close Icon -->
+			<div class="nav-close">
+				<i class="fas fa-times" aria-hidden="true"></i>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="index"><img src="img/core-img/logo.png" alt=""></a>
+			</div>
+			<!-- Amado Nav -->
+			<nav class="amado-nav">
+				<ul>
+					<li><a href="index">Home</a></li>
+					<li><a href="shop">Shop</a></li>
+					<li><a href="product-details">Product</a></li>
+					<li><a href="cart">Cart</a></li>
+				</ul>
+			</nav>
+			<!-- Button Group -->
+			<div class="amado-btn-group mt-30 mb-100">
+				<a href="login" class="btn goto amado-btn mb-15">Sign IN</a>
+				<a href="#" class="btn amado-btn active">New this week</a>
+			</div>
+			<!-- Cart Menu -->
+			<div class="cart-fav-search mb-100">
+				<a href="cart" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span
+						class="num-prod">(0)</span></a>
+				<a href="profile" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Profile</a>
+
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+		<div class="cart-table-area section-padding-100">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-lg-8">
+						<div class="checkout_details_area mt-50 clearfix">
+
+							<div class="cart-title">
+								<h2>Sign Up</h2>
+							</div>
+
+							<form id="form-valid">
+								<div class="row">
+									<div class="col-12 mb-3">
+										<input type="email" class="form-control" maxlength="35" id="emailR" placeholder="Email"
+											value="">
+									</div>
+
+									<div class="col-12 mb-3">
+										<input type="text" class="form-control" maxlength="25" id="usernameR"
+											placeholder="Username" value="">
+									</div>
+
+									<div class="col-md-6 mb-3">
+										<input type="text" class="form-control" maxlength="25" id="first_nameR" value=""
+											placeholder="First Name" required>
+									</div>
+									<div class="col-md-6 mb-3">
+										<input type="text" class="form-control" maxlength="25" id="last_nameR" value=""
+											placeholder="Last Name" required>
+									</div>
+									<div class="col-12 mb-3">
+										<input type="password" maxlength="16" class="form-control" id="passwordR"
+											placeholder="Password" value="">
+									</div>
+									<div class="col-3">
+										<div class="cart-btn mt-25">
+											<a href="#" onclick="requestReg()" class="btn amado-btn w-100">Sign Up</a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="cart-summary">
+							<h5>Do have account?</h5>
+							<ul class="summary-table">
+								<li><span style="text-transform: none;">You can log in. Just click the button</span>
+							</ul>
+
+							<div class="cart-btn mt-25">
+								<a href="login" class="btn amado-btn w-100">Log in</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main Content Wrapper End -->
+
+	<!-- Footer Area Start -->
+	<footer class="footer_area clearfix">
+		<div class="container">
+			<div class="row align-items-center">
+				<!-- Single Widget Area -->
+				<div class="col-12 col-lg-4">
+					<div class="single_widget_area">
+						<!-- Logo -->
+						<div class="footer-logo mr-50">
+							<a href="index"><img src="img/core-img/logo2.png" alt=""></a>
+						</div>
+						<!-- Copywrite Text -->
+						<p class="copywrite">
+							Copyright &copy;
+							<script>document.write(new Date().getFullYear());</script> All rights reserved | Used only for
+							study <i class="fa fa-heart-o" aria-hidden="true"></i>
+						</p>
+					</div>
+				</div>
+				<!-- Single Widget Area -->
+				<div class="col-12 col-lg-8">
+					<div class="single_widget_area">
+						<!-- Footer Menu -->
+						<div class="footer_menu">
+							<nav class="navbar navbar-expand-lg justify-content-end">
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+									data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false"
+									aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+								<div class="collapse navbar-collapse" id="footerNavContent">
+									<ul class="navbar-nav ml-auto">
+										<li class="nav-item">
+											<a class="nav-link" href="index">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="shop">Shop</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="product-details">Product</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="cart">Cart</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Area End -->
+
+	<!-- Necessary for All JavaScript Plugins -->
+	<script src="js/jquery/jquery-2.2.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/authorization.js"></script>
+	<script src="js/active.js"></script>
+
+</body>
+
+</html>
