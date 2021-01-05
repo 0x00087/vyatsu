@@ -66,7 +66,8 @@ function requestReg() {
 					localStorage.setItem('username', data.username);
 					document.location.href = ('/login.html');
 				} else {
-					alert('Email already used')
+					alert('Email or Username already used')
+					
 				}
 			}).catch(console.error);
 	}
@@ -87,7 +88,7 @@ function validateMail(mail) {
 }
 
 function validateUsername(username) {
-	var reg = /^[a-zA-Z][a-zA-Z0-9-_\.]{5,16}$/;
+	var reg = /^[a-zа-яA-ZА-я][a-zа-яA-ZА-Я0-9-_\.]{5,16}$/
 	var address = username.value;
 	if (reg.test(address) == false) {
 		username.value = "";

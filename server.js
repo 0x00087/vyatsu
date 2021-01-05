@@ -141,7 +141,7 @@ const server = http.createServer((req, res) => {
 				}
 				if (params.type === 3) {
 					const user = [params.email, params.username];
-					const queue = "SELECT * FROM webstore.customers WHERE Email like ? and Username like ?"
+					const queue = "SELECT * FROM webstore.customers WHERE Email like ? or Username like ?"
 
 					connection.query(queue, user, function (err, results) {
 						if (err) console.log(err);
@@ -192,7 +192,9 @@ const server = http.createServer((req, res) => {
 
 							}
 						}
-						res.end(JSON.stringify(price));
+						if (price < 0)
+					{callback("Произошла ошибка!")}
+					else{	res.end(JSON.stringify(price));}
 					})
 				}
 				if (params.type === 5) {
@@ -216,7 +218,8 @@ const server = http.createServer((req, res) => {
 
 						const queue = "SELECT * FROM webstore.order where webstore.order.ID_Customer like ?"
 						connection.query(queue, userID.ID[0], function (err, results) {
-							if (err) { }
+							if (err) { 
+							}
 							else {
 								var order = {
 									'ID': [],
@@ -286,7 +289,7 @@ const server = http.createServer((req, res) => {
 							}
 						}
 
-						if (price === 0) {
+						if ((price < 1) || (price > 100000) ) {
 							res.end(JSON.stringify(false));
 						}
 						else {

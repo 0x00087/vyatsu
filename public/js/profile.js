@@ -115,8 +115,8 @@ function checkCart() {
 }
 
 function logout() {
-	localStorage.setItem('login', 0);
 	localStorage.removeItem('login');
 	localStorage.removeItem('username');
+	localStorage.removeItem('localCart');
 	document.location.href = ('/')
 }
